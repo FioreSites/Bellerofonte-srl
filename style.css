@@ -356,6 +356,47 @@ nav.scrolled {
 	letter-spacing: 1px;
 }
 
+/* --- Sezione Team --- */
+.team-grid{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	gap:25px;
+}
+.team-card{
+	width:250px;
+}
+.team .section-header {
+	margin: 0 auto 30px;
+}
+.card-img{
+	object-fit:cover;
+	overflow:hidden;
+	width:250px;
+}
+.team-card:hover img{
+	scale:1.15;
+}
+.team-card img{
+	width:100%;
+	transition:all 0.4s ease;
+}
+.team-card div{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	line-height:15px;
+	margin-top:10px;
+}
+.team-card h3{
+	font-weight:500;
+}
+.team-card p{
+	font-size:0.85rem;
+	font-weight:300;
+	color:var(--text);
+}
+
 /* --- Sezione Servizi --- */
 .services {
 	padding: 75px 0 100px 0;
@@ -756,6 +797,15 @@ footer {
 	.hero-content h1 { font-size: 2.5rem; }
 	.hero-buttons { flex-direction: column; width: 100%; }
 	.hero-buttons .btn { width: 100%; }
+	.section-title{
+		font-size:2rem;
+	}
+	.about-text p{
+		font-size:0.95rem;
+	}
+	p{
+		font-size:0.95rem;
+	}
 	.service-card{
 		width:400px;
 	}

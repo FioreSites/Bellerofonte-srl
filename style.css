@@ -368,9 +368,6 @@ nav.scrolled {
 }
 
 /* --- Sezione Team --- */
-.team{
-	background-color: var(--bg-light);
-}
 .team-grid{
 	display:flex;
 	flex-wrap:wrap;

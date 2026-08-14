@@ -408,6 +408,34 @@ nav.scrolled {
 	font-weight:300;
 	color:var(--text);
 }
+.arrow {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 12px;
+}
+
+.arrow::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 10px;
+    height: 1px;
+    background: currentColor;
+    transform: rotate(-45deg);
+}
+
+.arrow::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 8px;
+    height: 8px;
+    border-top: 1.5px solid currentColor;
+    border-right: 1.5px solid currentColor;
+}
 
 /* --- Sezione Servizi --- */
 .services {
@@ -821,6 +849,13 @@ footer {
 	}
 	.about-text p{
 		font-size:0.95rem;
+	}
+	.about-stats {
+		gap: 15px;
+	}
+
+	.stat-card {
+		padding: 10px;
 	}
 	p{
 		font-size:0.95rem;

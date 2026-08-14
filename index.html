@@ -247,7 +247,7 @@
 								<label for="message">Messaggio / Richiesta</label>
 								<textarea id="message" name="message" rows="4" placeholder="Descrivi le tue esigenze di analisi o comunicazione..." required></textarea>
 							</div>
-							<button type="submit" class="btn" style="width: 100%;">Invia Richiesta</button>
+							<button type="submit" class="btn btn-form" style="width: 100%;">Invia Richiesta</button>
 						</form>
 					</div>
 
@@ -273,7 +273,7 @@
         </div>
     </section>
 
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.287051504066!2d11.858733501615577!3d44.29554606866943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132b4e6dd91e2047%3A0x6fa6b0d92fcab263!2sVia%20Galileo%20Galilei%2C%202%2C%2048018%20Faenza%20RA!5e1!3m2!1sit!2sit!4v1785709431037!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.287051504066!2d11.858733501615577!3d44.29554606866943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132b4e6dd91e2047%3A0x6fa6b0d92fcab263!2sVia%20Galileo%20Galilei%2C%202%2C%2048018%20Faenza%20RA!5e1!3m2!1sit!2sit!4v1785709431037!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Mappa dove trovarci"></iframe>
 
     <!-- Footer -->
     <footer>
@@ -313,7 +313,7 @@
             });
         });
 		
-		const sezioni = document.querySelectorAll("#chi-siamo, #metodo, #servizi, #contatti");
+		const sezioni = document.querySelectorAll("#chi-siamo, #team, #metodo, #servizi, #contatti");
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -323,7 +323,7 @@
                 }
             });
         }, {
-            threshold: 0.35
+            threshold: 0.2
         });
 
         sezioni.forEach(sezione => {

@@ -81,6 +81,15 @@ ul {
 	background: transparent;
 	border-color: var(--secondary);
 }
+.btn-form{
+	border: 2px solid var(--primary);
+	background: var(--primary);
+}
+.btn-form:hover{
+	border: 2px solid var(--secondary-dark);
+	background: var(--secondary-dark);
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0);
+}
 
 /* --- Navbar --- */
 nav {
@@ -169,6 +178,7 @@ nav.scrolled {
 }
 
 #chi-siamo,
+#team,
 #metodo,
 #servizi,
 #contatti {
@@ -178,6 +188,7 @@ nav.scrolled {
 }
 
 #chi-siamo.visibile,
+#team.visibile,
 #metodo.visibile,
 #servizi.visibile,
 #contatti.visibile {
@@ -275,7 +286,7 @@ nav.scrolled {
 
 /* --- Sezione Chi Siamo --- */
 #chi-siamo, #servizi, #metodo, #contatti{
-	scroll-margin-top: 60px;
+	scroll-margin-top: 140px;
 }
 
 .about {
@@ -373,20 +384,21 @@ nav.scrolled {
 	object-fit:cover;
 	overflow:hidden;
 	width:250px;
+	height:250px;
 }
 .team-card:hover img{
-	scale:1.15;
+	scale:1.1;
 }
 .team-card img{
 	width:100%;
 	transition:all 0.4s ease;
 }
-.team-card div{
+.team-text{
 	display:flex;
 	align-items:center;
 	justify-content:space-between;
 	line-height:15px;
-	margin-top:10px;
+	margin-top:15px;
 }
 .team-card h3{
 	font-weight:500;
@@ -399,7 +411,7 @@ nav.scrolled {
 
 /* --- Sezione Servizi --- */
 .services {
-	padding: 75px 0 100px 0;
+	padding:100px 0;
 	background-color: var(--bg-light);
 }
 
@@ -800,6 +812,13 @@ footer {
 	.section-title{
 		font-size:2rem;
 	}
+	#chi-siamo, #servizi, #metodo, #contatti{
+		scroll-margin-top: 120px;
+	}
+	.about, .services, .method, .contact{
+		padding-top:75px;
+		padding-bottom:75px;
+	}
 	.about-text p{
 		font-size:0.95rem;
 	}
@@ -808,5 +827,14 @@ footer {
 	}
 	.service-card{
 		width:400px;
+	}
+	.contact-form-box {
+		padding:25px;
+	}
+	.contact-info-box {
+		padding: 30px;
+	}
+	.footer-bottom {
+		font-size:0.75rem;
 	}
 }

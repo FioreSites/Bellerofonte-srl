@@ -368,6 +368,9 @@ nav.scrolled {
 }
 
 /* --- Sezione Team --- */
+.team{
+	background-color: var(--bg-light);
+}
 .team-grid{
 	display:flex;
 	flex-wrap:wrap;
@@ -412,7 +415,7 @@ nav.scrolled {
 /* --- Sezione Servizi --- */
 .services {
 	padding:100px 0;
-	background-color: var(--bg-light);
+	background-color: var(--white);
 }
 
 .services-grid {

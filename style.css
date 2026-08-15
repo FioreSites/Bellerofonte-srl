@@ -9,7 +9,7 @@
 :root {
 	--primary: #090D16;
 	--secondary: #00a2ff;
-	--secondary-dark: #0284C7;
+	--secondary-dark: #0076D6;
 	--accent: #6366F1;
 	--text: #334155;
 	--text-light: #64748B;
@@ -52,8 +52,8 @@ ul {
 	font-family: 'Inter', sans-serif;
 	display: inline-block;
 	padding: 14px 32px;
-	border: 2px solid var(--secondary);
-	background: var(--secondary);
+	border: 2px solid var(--secondary-dark);
+	background: var(--secondary-dark);
 	color: var(--white);
 	text-transform: uppercase;
 	font-size: 0.8rem;
@@ -66,8 +66,8 @@ ul {
 }
 
 .btn:hover {
-	background: var(--secondary-dark);
-	border-color: var(--secondary-dark);
+	background: var(--secondary);
+	border-color: var(--secondary);
 	box-shadow: 0 10px 20px rgba(56, 189, 248, 0.15);
 }
 
@@ -573,7 +573,7 @@ nav.scrolled {
 }
 
 .method-step p {
-	color: #94A3B8;
+	color: #A8B7BD;
 	font-size: 0.95rem;
 }
 
@@ -664,7 +664,7 @@ nav.scrolled {
 }
 
 .contact-info-box p {
-    color: #94A3B8;
+    color: #A8B7BD;
     font-size: 0.95rem;
     margin-bottom: 25px;
     line-height: 1.6;
@@ -693,7 +693,7 @@ nav.scrolled {
 }
 
 .contact-line a, .contact-line p {
-    color: var(--black);
+    color: var(--white);
     font-size: 1rem;
     font-weight: 500;
 }
@@ -762,7 +762,7 @@ footer {
 	text-align:center;
 	align-items: center;
 	font-size: 0.85rem;
-	color: #64748B;
+	color: #A8B7BD;
 }
 
 /* Responsive Design */
